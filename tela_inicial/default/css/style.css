@@ -194,7 +194,7 @@ li a{
   border-radius: 20px;
   border: 0;
   margin-top: .5rem;
-  background-color: #2d6475;
+  background-color: #5C000F;
   font-weight: 500;
   background-image: url(../../assets/printer.svg);
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ li a{
 .btMenuPrint:hover{
   transform: scale(1.1) ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
-  background-color: #278dac;
+  background-color: #5C000F;
 }
 .menuPrint{
   border: 0;
@@ -219,7 +219,7 @@ li a{
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  background-color: #2d6475;
+  background-color: #5C000F;
   border-radius: 15px;
   background-position: center center;
   background-size: 15px;
@@ -228,7 +228,7 @@ li a{
   margin-left: -10px;  
 }
 .menuPrint.dropdown-menu li a:hover::before{
-  background-color: #278dac;
+  background-color: #5C000F;
 }
 ul.menuPrint.dropdown-menu:before{
   display: none;
@@ -594,7 +594,9 @@ ul {
 }
 
 .voltar-topo{
-  margin-top: 20px;
+  width: 74px;
+  height: 73px;
+  display: block;
 }
 
 .mover-fazer{
@@ -675,7 +677,7 @@ ul {
   width: 500px;
 }
 .circulo-2 {
-  background-color: #fed06e;
+  background-color: #ee7d00;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -689,7 +691,7 @@ ul {
   right: -140px;
 }
 .circulo-4 {
-  background-color: #fed06e;
+  background-color: #ee7d00;
   height: 150px;
   width: 150px;
   border-radius: 50%;

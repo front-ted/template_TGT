@@ -4,12 +4,12 @@
 */
 :root{
 	--bg-gradiente-primario: #5C000F;
-	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #ffd336 50%, #ee7d00 92%);
+	--gradiente-primario: linear-gradient(30deg, #5C000F 10%, #ffd336 50%, #ee7d00 92%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
 	linear-gradient(80deg, #5C000F 10%, #ffd336 50%, #ee7d00 92%) border-box;
 
-	--bg-gradiente-secundario: #92ACCE;
+	--bg-gradiente-secundario: #ffd336;
 	/* --gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%); */
 	--gradiente-secundario: linear-gradient(120deg, #5C000F 0%, #ffd336 100%);
 
