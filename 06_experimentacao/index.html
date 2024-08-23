@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Título do conhecimento</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+        </div>
+    </header>
+    <!--Menu lateral-->
+    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop"></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
+            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <nav id="nav-offcanvas" class="offcanvas-body">
+            <ul>
+                <li><a href="#titulo1">Introdução </a></li>
+                <li><a href="#titulo2">Sobre o curso </a></li>
+                <li><a href="#titulo3">Área de atuação no mercado de trabalho </a></li>
+                <li><a href="#titulo4">Perfil profissional </a></li>
+                <li><a href="#titulo5">Encerramento </a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="container pagina">
+                <h2>Experimentação – Técnico em Qualidade </h2>
+                <h3 id="titulo1">Introdução</h3>
+                <div class="row">
+                    <div class="col">
+                        <p class="destaque-textoInicial"> Olá!</p>
+                        <p> Seja bem-vindo(a) ao curso Técnico em Qualidade do Senac EAD! </p>
+                        <p> Você já pensou em se tornar um técnico em qualidade? Essa formação é o caminho para se
+                            destacar no mercado de trabalho, aumentar sua remuneração e elevar sua carreira a novos
+                            patamares. Você explorará o que define esse profissional e como ele pode fazer a diferença
+                            no mercado. </p>
+                    </div>
+                    <div class="col">
+                        <img src="img/ilustra1.png" class="no-print" style="max-width: 350px;" alt="">
+                    </div>
+                </div>
+                <p> Em uma era de transformações significativas, na qual a exigência do cliente alcança níveis cada vez
+                    mais elevados, assegurar a entrega de produtos e serviços de alta qualidade é crucial para a
+                    sustentabilidade das empresas. Nesse contexto, o papel do técnico em qualidade torna-se
+                    indispensável. A valorização desse profissional por parte de empresas, instituições e outras
+                    organizações é reflexo da sua relevância estratégica. </p>
+                <p> Dedique um momento para explorar em detalhes o curso Técnico em Qualidade na modalidade de educação
+                    a distância (EAD). Entenda o significado de qualidade para as empresas, o papel fundamental
+                    desempenhado pelo técnico, as amplas oportunidades de atuação que se abrem para sua carreira, o
+                    conteúdo que será absorvido durante o curso e, por fim, as perspectivas do mercado de trabalho. </p>
+
+                <h3 id="titulo2">Sobre o curso </h2>
+                    <p>
+                        O curso Técnico em Qualidade na modalidade EAD é oferecido pelo Senac em todo o Brasil e tem uma
+                        duração de 800 horas, divididas em duas etapas. Cada etapa é composta de unidades curriculares,
+                        conhecidas como UCs, e do projeto integrador, ou PI.
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <div class="row  justify-content-md-center no-print" aria-hidden="true">
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                            <button type="button" class="botao botaoGiga check hvr-sweep-to-right botaoModalBg"
+                                data-bs-toggle="modal" data-bs-target="#modal1">
+                                Primeira <br>etapa
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                            <button type="button" class="botao botaoGiga check hvr-sweep-to-right botaoModalBg"
+                                data-bs-toggle="modal" data-bs-target="#modal2">
+                                Segunda <br>etapa
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sr-only">
+                        <p><strong>A primeira etapa é constituída por sete UCs e um PI.</strong> </p>
+                        <div class="table-responsive">
+                            <table class="text-left align-middle">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="table-header" rowspan="10">Etapa I </th>
+                                        <th class="table-header" colspan="2">Unidades curriculares
+                                            Projeto integrador I </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border" rowspan="10">Projeto integrador I </td>
+                                    <tr>
+                                    <tr>
+                                        <td class="table-border">1 – Utilizar metodologias e ferramentas da qualidade
+                                            nas organizações </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">2 – Mapear processos da organização </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">3 – Criar e acompanhar o desenvolvimento de indicadores
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">4 – Assessorar na implementação do Sistema de Gestão da
+                                            Qualidade </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">5 – Elaborar e controlar a documentação do Sistema de
+                                            Gestão da Qualidade </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">6 – Monitorar e controlar os riscos dos processos de
+                                            gestão </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">7 – Auxiliar em processos de auditorias de Gestão da
+                                            Qualidade </td>
+                                    </tr>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        <p><strong>Utilizar metodologias e ferramentas da qualidade nas organizações</strong> – 1 Nesta
+                            UC, você conhecerá a evolução da qualidade ao longo da história e saberá como identificar e
+                            utilizar as ferramentas da qualidade. </p>
+                        <p><strong>Mapear processos da organização</strong> – Nesta UC, você aprenderá a gerenciar e
+                            otimizar processos organizacionais, abordando desde a sua análise até a implementação de
+                            melhorias, utilizando metodologias de mapeamento e padronização. </p>
+                        <p><strong>Criar e acompanhar o desenvolvimento de indicadores</strong> – Nesta UC, você
+                            aprenderá a criar, analisar e comunicar indicadores de desempenho, alinhando-os com os
+                            processos e as estratégias da organização. </p>
+                        <p><strong>Assessorar na implementação do Sistema de Gestão da Qualidade</strong> – Nesta UC,
+                            você conhecerá o Sistema de Gestão da Qualidade e as normas ISO (especificamente a ISO
+                            9001), saberá mais a respeito de elaboração e condução de atividades como reuniões e
+                            palestras e, ainda, aprenderá habilidades de comunicação. </p>
+                        <p><strong>Elaborar e controlar a documentação do Sistema de Gestão da Qualidade</strong> –
+                            Nesta UC, você conhecerá a documentação do Sistema de Gestão da Qualidade, incluindo tipos
+                            de documentos e sua aplicação prática. Também compreenderá o conceito de informação
+                            documentada e como mantê-la de forma adequada no Sistema de Gestão da Qualidade. </p>
+                        <p><strong>Monitorar e controlar os riscos dos processos de gestão</strong> – Nesta UC, você
+                            estudará a gestão de riscos conforme as normas ISO 9001 e ISO 31000, incluindo a
+                            determinação de riscos e oportunidades, assim como técnicas de identificação e avaliação de
+                            riscos, como <i>brainstorming</i> e matrizes GUT, SWOT, COSO e FMEA. </p>
+                        <p><strong>Auxiliar em processos de auditorias de Gestão da Qualidade</strong> – Nesta UC, você
+                            estudará a auditoria de sistemas de gestão da qualidade, incluindo técnicas, perfil do
+                            auditor e responsabilidades. Também compreenderá os processos de planejamento, execução,
+                            controle e ação da auditoria, além de aprender como elaborar relatórios e conduzir
+                            auditorias de acompanhamento. </p>
+                        <p><strong>Projeto integrador I </strong>– Neste PI, você poderá desenvolver projetos de
+                            melhoria contínua. Será capaz de identificar problemas, realizar ações corretivas e
+                            preventivas e identificar oportunidades de aprimoramento. </p>
+
+                    </div>
+
+                    <div class="sr-only">
+                        <p><strong>A segunda etapa é constituída de três UCs, além do PI. </strong></p>
+                        <div class="table-responsive">
+                            <table class="text-left align-middle">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="table-header" rowspan="10">Etapa II </th>
+                                        <th class="table-header" colspan="2">Unidades curriculares
+                                            Projeto integrador II </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border" rowspan="10">Projeto integrador II </td>
+                                    <tr>
+                                    <tr>
+                                        <td class="table-border">8 – Propor melhorias do Sistema de Gestão da Qualidade
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">9 – Auxiliar a implementação e manutenção de modelos e
+                                            sistemas de gestão </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-border">10 – Atuar na rastreabilidade e confiabilidade do
+                                            processo de metrologia </td>
+                                    </tr>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+
+                        <p> <strong>Propor melhorias do Sistema de Gestão da Qualidade</strong> – Nesta UC, você
+                            aprenderá a analisar situações, realizar ações corretivas e ter uma mentalidade de gestão de
+                            riscos. Também será capacitado a identificar e corrigir não conformidades, planejar
+                            melhorias e usar ferramentas da qualidade. Ainda, conhecerá a gestão de conflitos e os
+                            custos relacionados à qualidade. </p>
+                        <p> <strong>Auxiliar a implementação e manutenção de modelos e sistemas de gestão</strong> –
+                            Nesta UC, você conhecerá diferentes modelos e sistemas de gestão utilizados em diversos
+                            setores. Ainda, compreenderá modelos como MEG, WCM, EFQM, entre outros. Também serão
+                            abordadas as normas ISO 9001, ISO 14001 e ISO 45001, bem como a integração delas, além das
+                            certificações de sistemas de gestão e sua aplicação. </p>
+                        <p> <strong>Atuar na rastreabilidade e confiabilidade do processo de metrologia</strong> – Nesta
+                            UC, você conhecerá a metrologia abrangendo conceitos, histórico, áreas de atuação, pirâmide
+                            metrológica, integração com gestão da qualidade, equipamentos de medição e processo de
+                            medição. Serão discutidos temas como calibração, verificação, incertezas, erros de medição e
+                            interpretação de relatórios. </p>
+                        <p> <strong>Projeto integrador II</strong> – Neste PI, você dará continuidade aos projetos de
+                            melhoria contínua, visando aprimorar resultados, qualidade e processos e reduzir custos.
+                            Além disso, será trabalhada a sua capacidade de disseminar a cultura da qualidade nas
+                            organizações, utilizando ferramentas e métodos específicos. </p>
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-80">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Primeira etapa</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>A primeira etapa é constituída por sete UCs e um PI.</strong> </p>
+                                    <div class="table-responsive">
+                                        <table class="text-left align-middle">
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="table-header" rowspan="10">Etapa I </th>
+                                                    <th class="table-header" colspan="2">Unidades curriculares
+                                                        Projeto integrador I </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border" rowspan="10">Projeto integrador I </td>
+                                                <tr>
+                                                <tr>
+                                                    <td class="table-border">1 – Utilizar metodologias e ferramentas da
+                                                        qualidade nas organizações </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">2 – Mapear processos da organização </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">3 – Criar e acompanhar o desenvolvimento de
+                                                        indicadores </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">4 – Assessorar na implementação do Sistema
+                                                        de Gestão da Qualidade </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">5 – Elaborar e controlar a documentação do
+                                                        Sistema de Gestão da Qualidade </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">6 – Monitorar e controlar os riscos dos
+                                                        processos de gestão </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">7 – Auxiliar em processos de auditorias de
+                                                        Gestão da Qualidade </td>
+                                                </tr>
+                                                </tr>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <br>
+                                    <p><strong>Utilizar metodologias e ferramentas da qualidade nas
+                                            organizações</strong> – 1 Nesta UC, você conhecerá a evolução da qualidade
+                                        ao longo da história e saberá como identificar e utilizar as ferramentas da
+                                        qualidade. </p>
+                                    <p><strong>Mapear processos da organização</strong> – Nesta UC, você aprenderá a
+                                        gerenciar e otimizar processos organizacionais, abordando desde a sua análise
+                                        até a implementação de melhorias, utilizando metodologias de mapeamento e
+                                        padronização. </p>
+                                    <p><strong>Criar e acompanhar o desenvolvimento de indicadores</strong> – Nesta UC,
+                                        você aprenderá a criar, analisar e comunicar indicadores de desempenho,
+                                        alinhando-os com os processos e as estratégias da organização. </p>
+                                    <p><strong>Assessorar na implementação do Sistema de Gestão da Qualidade</strong> –
+                                        Nesta UC, você conhecerá o Sistema de Gestão da Qualidade e as normas ISO
+                                        (especificamente a ISO 9001), saberá mais a respeito de elaboração e condução de
+                                        atividades como reuniões e palestras e, ainda, aprenderá habilidades de
+                                        comunicação. </p>
+                                    <p><strong>Elaborar e controlar a documentação do Sistema de Gestão da
+                                            Qualidade</strong> – Nesta UC, você conhecerá a documentação do Sistema de
+                                        Gestão da Qualidade, incluindo tipos de documentos e sua aplicação prática.
+                                        Também compreenderá o conceito de informação documentada e como mantê-la de
+                                        forma adequada no Sistema de Gestão da Qualidade. </p>
+                                    <p><strong>Monitorar e controlar os riscos dos processos de gestão</strong> – Nesta
+                                        UC, você estudará a gestão de riscos conforme as normas ISO 9001 e ISO 31000,
+                                        incluindo a determinação de riscos e oportunidades, assim como técnicas de
+                                        identificação e avaliação de riscos, como <i>brainstorming</i> e matrizes GUT,
+                                        SWOT, COSO e FMEA. </p>
+                                    <p><strong>Auxiliar em processos de auditorias de Gestão da Qualidade</strong> –
+                                        Nesta UC, você estudará a auditoria de sistemas de gestão da qualidade,
+                                        incluindo técnicas, perfil do auditor e responsabilidades. Também compreenderá
+                                        os processos de planejamento, execução, controle e ação da auditoria, além de
+                                        aprender como elaborar relatórios e conduzir auditorias de acompanhamento. </p>
+                                    <p><strong>Projeto integrador I </strong>– Neste PI, você poderá desenvolver
+                                        projetos de melhoria contínua. Será capaz de identificar problemas, realizar
+                                        ações corretivas e preventivas e identificar oportunidades de aprimoramento.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-80">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Segunda etapa</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>A segunda etapa é constituída de três UCs, além do PI. </strong></p>
+                                    <div class="table-responsive">
+                                        <table class="text-left align-middle">
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="table-header" rowspan="10">Etapa II </th>
+                                                    <th class="table-header" colspan="2">Unidades curriculares
+                                                        Projeto integrador II </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border" rowspan="10">Projeto integrador II </td>
+                                                <tr>
+                                                <tr>
+                                                    <td class="table-border">8 – Propor melhorias do Sistema de Gestão
+                                                        da Qualidade </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">9 – Auxiliar a implementação e manutenção
+                                                        de modelos e sistemas de gestão </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-border">10 – Atuar na rastreabilidade e
+                                                        confiabilidade do processo de metrologia </td>
+                                                </tr>
+                                                </tr>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <br>
+
+                                    <p> <strong>Propor melhorias do Sistema de Gestão da Qualidade</strong> – Nesta UC,
+                                        você aprenderá a analisar situações, realizar ações corretivas e ter uma
+                                        mentalidade de gestão de riscos. Também será capacitado a identificar e corrigir
+                                        não conformidades, planejar melhorias e usar ferramentas da qualidade. Ainda,
+                                        conhecerá a gestão de conflitos e os custos relacionados à qualidade. </p>
+                                    <p> <strong>Auxiliar a implementação e manutenção de modelos e sistemas de
+                                            gestão</strong> – Nesta UC, você conhecerá diferentes modelos e sistemas de
+                                        gestão utilizados em diversos setores. Ainda, compreenderá modelos como MEG,
+                                        WCM, EFQM, entre outros. Também serão abordadas as normas ISO 9001, ISO 14001 e
+                                        ISO 45001, bem como a integração delas, além das certificações de sistemas de
+                                        gestão e sua aplicação. </p>
+                                    <p> <strong>Atuar na rastreabilidade e confiabilidade do processo de
+                                            metrologia</strong> – Nesta UC, você conhecerá a metrologia abrangendo
+                                        conceitos, histórico, áreas de atuação, pirâmide metrológica, integração com
+                                        gestão da qualidade, equipamentos de medição e processo de medição. Serão
+                                        discutidos temas como calibração, verificação, incertezas, erros de medição e
+                                        interpretação de relatórios. </p>
+                                    <p> <strong>Projeto integrador II</strong> – Neste PI, você dará continuidade aos
+                                        projetos de melhoria contínua, visando aprimorar resultados, qualidade e
+                                        processos e reduzir custos. Além disso, será trabalhada a sua capacidade de
+                                        disseminar a cultura da qualidade nas organizações, utilizando ferramentas e
+                                        métodos específicos. </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grafismo">
+                        <div class="destaque gradiente icone atencao">
+                            <p>IMPORTANTE - Perceba que os conteúdos a serem ensinados contribuem para a formação do
+                                técnico, que deve compreender a necessidade de ser arrojado, inovador e criativo na
+                                promoção da qualidade nas organizações, além de compreender os métodos e as técnicas
+                                para implementar e garantir a qualidade contínua e crescente de produtos, processos e
+                                serviços ofertados. </p>
+                        </div>
+                    </div>
+                    <h3 id="titulo3">Área de atuação no mercado de trabalho</h3>
+                    <div class="destaque borda-colorida">
+                        <p>Esteja certo de que a formação como técnico em qualidade é muito vantajosa! </p>
+                    </div>
+                    <p>A valorização do técnico em qualidade se deve à sua importância estratégica, contribuindo para
+                        melhorias internas, redução de custos e resolução de problemas. O aumento da demanda por
+                        profissionais qualificados é evidenciado pelo crescimento de 27,75% nas contratações formais em
+                        regime integral de trabalho entre dezembro de 2021 e novembro de 2022, refletindo a crescente
+                        exigência por qualidade por parte dos clientes e da sociedade. </p>
+                    <p>Os técnicos em qualidade podem atuar em praticamente qualquer empresa, podendo ser públicas,
+                        privadas ou do terceiro setor. Independentemente do setor de atuação ou, ainda, do tamanho
+                        dessas instituições, elas têm a necessidade de investir em profissionais cada vez mais
+                        preparados. </p>
+                    <p>E não é difícil entender os motivos: a necessidade das empresas de permanecerem no mercado; a
+                        urgência de uma retomada de crescimento; a existência de consumidores mais atentos, frutos da
+                        democratização da internet e das redes sociais, que exigem qualidade em tudo. </p>
+                    <p>Essas situações levam, então, a um consequente aumento na demanda de profissionais que saibam
+                        desenvolver as funções do técnico em qualidade. </p>
+                    <p>Veja alguns exemplos de mercado de trabalho nos quais você, como técnico em qualidade, poderá
+                        atuar: </p>
+
+                    <div class="grafismo grafismoDuplo">
+                        <div class="destaque borda-colorida iconeGrafismoDuplo">
+                            <ul class="custom-bullet">
+                                <li>No setor da saúde, especialmente em hospitais, clínicas e laboratórios. </li>
+                                <li>Na área financeira, como bancos, empresas de investimento e bolsa de valores. </li>
+                                <li>Em empresas fornecedoras de serviços, como de hotelaria, telefonia, internet,
+                                    energia, saneamento, transporte, planos de saúde, educação e outras. </li>
+                                <li>No comércio em geral, como rede de lojas de vestuário, calçados, ópticas, lojas de
+                                    informática, restaurantes e revendas de veículos. </li>
+                                <li>Nas indústrias, principalmente nos setores automotivos e metalúrgicos, bem como no
+                                    setor alimentício em geral, incluindo empresas de envasamento de bebidas. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Cabe comentar que a indústria se destaca na contratação de profissionais da qualidade, pois o
+                        mercado, principalmente o internacional, é bastante exigente quanto aos certificados da
+                        qualidade em produtos e processos de fabricação. </p>
+                    <p>Além disso, em razão do crescimento do setor de serviços, a própria norma ISO, em suas versões
+                        mais recentes, preocupou-se com a inclusão desse setor, aumentando ainda mais o leque de atuação
+                        profissional do técnico em qualidade. </p>
+                    <p>Igualmente, muitas empresas contratam profissionais da qualidade para garantir a eficácia em seus
+                        métodos de trabalho e minimizar custos e desperdícios. </p>
+                    <p>Desse modo, a existência de um profissional técnico em qualidade justifica-se na medida em que as
+                        atribuições do setor da qualidade são fundamentais para todas as organizações, desde as mais
+                        simples até as mais complexas. Isso faz com que a atuação desse profissional seja imprescindível
+                        para criar condições que promovam o desenvolvimento dessas organizações com qualidade,
+                        garantindo a continuidade delas. </p>
+
+
+                    <div class="destaque borda-colorida">
+                        <p>É importante saber que o curso tem duração de aproximadamente um ano e possibilita que você
+                            ingresse no mercado de trabalho com uma remuneração acima da média. </p>
+                    </div>
+
+                    <h3 id="titulo4">Perfil profissional</h3>
+                    <p>
+                        O técnico em qualidade é essencial para aprimorar processos empresariais, desenvolvendo manuais
+                        e relatórios alinhados aos mais altos padrões. Com <i>expertise</i> em controle de qualidade,
+                        lidera auditorias internas e contribui para auditorias externas. Além de divulgar procedimentos
+                        da qualidade, propõe iniciativas de informação e formação. Identificando não conformidades,
+                        realiza ações corretivas e preventivas, capacitando equipes para promover a cultura da qualidade
+                        e da excelência nas organizações. O técnico em qualidade é a chave para o sucesso empresarial
+                        por meio da excelência.
+                    </p>
+                    <p>
+                        Se você já entendeu o que faz o técnico em qualidade e está interessado nessa profissão, mas
+                        ainda tem dúvidas se ela é apropriada para você, veja a seguir algumas vantagens que podem
+                        ajudá-lo:
+                    </p>
+                    <div class="destaque borda-colorida icone atencao">
+                        <ul class="custom-bullet">
+                            <li>
+                                Área de atuação muito ampla
+                            </li>
+                        </ul>
+                        <p>
+                            Todas as empresas buscam sempre a melhoria contínua da qualidade de seus processos, produtos
+                            e serviços.
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>
+                                Conhecimentos para ocupar os seguintes cargos ligados diretamente à qualidade
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Auditor da qualidade
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Você realizará auditorias internas e acompanhará as auditorias externas para
+                                        verificar a realização das atividades e a adequação com as normas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Inspetor da qualidade
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Você realizará a inspeção dos resultados obtidos nos processos e a consequente
+                                        aprovação ou reprovação de produtos e serviços.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Assistente da qualidade e processos
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Você acompanhará os resultados dos processos e participará de grupos de
+                                        melhoria.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="position: relative;">
+                        <img src="img/ilustra2.png" class="ilustracao-float no-print" alt="">
+
+                    </div>
+
+                    <h3 id="titulo5">Encerramento</h3>
+                    <div class="destaque borda-colorida icone atencao">
+                        <p>
+                            É preciso planejar seu futuro, determinar objetivos, demonstrar ambições e saber onde quer
+                            chegar. Você gostou de conhecer um pouco mais a profissão e o curso Técnico em Qualidade do
+                            Senac?
+                        </p>
+                    </div>
+
+                    <img src="img/ilustra2.png" class="ilustracao-float2 no-print" alt="">
+                    <p>
+                        Nossa equipe de especialistas espera por você para começar essa jornada rumo à sua formação
+                        profissional.
+                    </p>
+                    <p>
+                        Até logo!
+                    </p>
+
+
+                    <a href=" #" class="voltar-topo no-print" aria-hidden="true"><img
+                            src="../assets/images/bt_topo.svg"></a>
+
+            </div>
+        </section>
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>
