@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 167">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_13);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_13" data-name="Gradiente sem nome 13" x1="16.99" y1="141.51" x2="133.01" y2="25.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee7d00"/>
+      <stop offset=".14" stop-color="rgba(238, 125, 0, .79)" stop-opacity=".79"/>
+      <stop offset=".3" stop-color="rgba(238, 125, 0, .55)" stop-opacity=".55"/>
+      <stop offset=".47" stop-color="rgba(238, 125, 0, .35)" stop-opacity=".35"/>
+      <stop offset=".62" stop-color="rgba(238, 125, 0, .2)" stop-opacity=".2"/>
+      <stop offset=".77" stop-color="rgba(238, 125, 0, .09)" stop-opacity=".09"/>
+      <stop offset=".9" stop-color="rgba(238, 125, 0, .02)" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#ee7d00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <polygon class="cls-1" points="69.63 0 107.27 18.25 144.63 37.1 147.64 78.82 150 120.6 115.37 144.07 80.37 167 42.73 148.75 5.37 129.9 2.36 88.17 0 46.4 34.63 22.92 69.63 0"/>
+  </g>
+</svg>

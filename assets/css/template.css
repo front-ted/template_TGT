@@ -15,8 +15,6 @@
     src: url("../fonts/Figtree-Bold.ttf");
 }
 
-/* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 5%, transparent 25%), radial-gradient(farthest-corner at 100% 100%, #E9ECEC 0%, transparent 60%), radial-gradient(farthest-corner at -2% 97%, #CF9993 0%, transparent 25%); */
-
 body {
     background-image: url('../../01_experimentacao/img/textura.png');
     background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
@@ -115,11 +113,12 @@ strong {
 }
 
 i,
-blockquote p,
 blockquote,
 em {
     font-family: figtree-italic;
 }
+
+.blockquote{padding-left: 60px;}
 
 p {
     margin-bottom: 30px;
@@ -243,7 +242,7 @@ tbody td:first-child {
 
 .accordion-body {
     margin-left: 20px;
-    border-left: 3px solid #1e8cb1;
+    border-left: 3px solid #5C000F;
 }
 
 /*slideshow - carousel*/
@@ -268,13 +267,13 @@ tbody td:first-child {
 }
 
 .carousel-control-prev {
-    background: url('../images/seta_esq.svg') no-repeat;
+    background: url('../images/esquerda.svg') no-repeat;
     left: -130px;
     background-color: transparent !important;
 }
 
 .carousel-control-next {
-    background: url('../images/seta_dir.svg') no-repeat;
+    background: url('../images/direita.svg') no-repeat;
     right: -130px;
     background-color: transparent !important;
 }
@@ -646,7 +645,7 @@ tbody td:first-child {
 }
 
 .destaque.icone.atividade::before {
-    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background: url('../images/ico_atividade.svg') no-repeat;
 }
 
 .destaque.icone.visualizar::before {
@@ -658,7 +657,7 @@ tbody td:first-child {
 }
 
 .destaque.icone.conclusao::before {
-    background: url('../images/ico_concluindo.svg') no-repeat;
+    background: url('../images/ico_concluido.svg') no-repeat;
 }
 
 .destaque.iconeGrafismo::before {
@@ -752,7 +751,7 @@ tbody td:first-child {
     top: -25px;
     margin: auto;
     left: -10px;
-    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background: url('../images/ico_atividade.svg') no-repeat;
     background-size: contain;
 }
 

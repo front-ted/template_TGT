@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: url(#Gradiente_sem_nome_6);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_6-2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" x1="0" y1="20.5" x2="41" y2="20.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c000f"/>
+      <stop offset=".16" stop-color="#60030e"/>
+      <stop offset=".33" stop-color="#6c0d0d"/>
+      <stop offset=".5" stop-color="#801f0b"/>
+      <stop offset=".66" stop-color="#9c3708"/>
+      <stop offset=".83" stop-color="#c15604"/>
+      <stop offset="1" stop-color="#ed7c00"/>
+      <stop offset="1" stop-color="#ee7d00"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_6-2" data-name="Gradiente sem nome 6" x1="16.72" y1="20.5" x2="30.13" y2="20.5" xlink:href="#Gradiente_sem_nome_6"/>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g id="Grupo_265" data-name="Grupo 265">
+      <g id="Grupo_89-4" data-name="Grupo 89-4">
+        <circle id="Elipse_1-5" data-name="Elipse 1-5" class="cls-1" cx="20.5" cy="20.5" r="20"/>
+      </g>
+      <path id="Caminho_317-3" data-name="Caminho 317-3" class="cls-2" d="M16.72,12.45v16.1l13.41-8.05-13.41-8.05Z"/>
+    </g>
+  </g>
+</svg>

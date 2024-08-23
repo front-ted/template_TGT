@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Camada_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 54.73"><defs><style>.cls-1{fill:url(#Gradiente_sem_nome_62);stroke-width:0px;}</style><linearGradient id="Gradiente_sem_nome_62" x1="0" y1="27.37" x2="60" y2="27.37" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a4480"/><stop offset=".36" stop-color="#1c4581"/><stop offset=".52" stop-color="#234c86"/><stop offset=".65" stop-color="#30578e"/><stop offset=".76" stop-color="#42679a"/><stop offset=".85" stop-color="#5a7caa"/><stop offset=".94" stop-color="#7795bc"/><stop offset="1" stop-color="#92acce"/></linearGradient></defs><g id="Camada_1-2"><path id="União_7" class="cls-1" d="M19.82,54.73c-2.44,0-4.41-1.98-4.41-4.41v-16.97c0-2.44,1.98-4.41,4.41-4.41h20.36c2.44,0,4.41,1.98,4.41,4.41v16.97c0,2.44-1.98,4.41-4.41,4.41h-20.36ZM19.25,49.29h15.36v-1.76h-15.36v1.76ZM19.25,44.68h21.5v-1.76h-21.5v1.76ZM19.25,40.07h21.5v-1.76h-21.5v1.76ZM19.25,35.47h21.5v-1.76h-21.5v1.76ZM13.84,44.48H4.41c-2.44,0-4.41-1.98-4.41-4.41v-19.41c0-2.44,1.98-4.41,4.41-4.41h51.18c2.44,0,4.41,1.98,4.41,4.41v19.41c0,2.44-1.98,4.41-4.41,4.41h-9.44v-12.76c0-2.44-1.98-4.41-4.41-4.41h-23.48c-2.44,0-4.41,1.98-4.41,4.41v12.76h0ZM15.41,14.73V4.41c0-2.44,1.98-4.41,4.41-4.41h20.36c2.44,0,4.41,1.98,4.41,4.41v10.32H15.41Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46.11 40.47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_6);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" x1="-3.92" y1="35.82" x2="42.75" y2="8.87" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c000f"/>
+      <stop offset=".16" stop-color="#60030e"/>
+      <stop offset=".33" stop-color="#6c0d0d"/>
+      <stop offset=".5" stop-color="#801f0b"/>
+      <stop offset=".66" stop-color="#9c3708"/>
+      <stop offset=".83" stop-color="#c15604"/>
+      <stop offset="1" stop-color="#ed7c00"/>
+      <stop offset="1" stop-color="#ee7d00"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <path class="cls-1" d="M11.33,32.25H3.39c-1.87,0-3.39-1.38-3.39-3.08v-13.54c0-1.7,1.52-3.08,3.39-3.08h39.33c1.87,0,3.39,1.38,3.39,3.08v13.54c0,1.7-1.52,3.08-3.39,3.08h-7.94v-8.9c0-1.7-1.52-3.08-3.39-3.08H14.72c-1.87,0-3.39,1.38-3.39,3.08v8.9ZM33.23,37.27v-12.28c0-1.76-1.38-3.19-3.08-3.19h-14.2c-1.7,0-3.08,1.43-3.08,3.19v12.28c0,1.76,1.38,3.19,3.08,3.19h14.2c1.7,0,3.08-1.43,3.08-3.19ZM26.27,35.25v1.28h-10.71v-1.28h10.71ZM30.55,31.91v1.28h-15v-1.28h15ZM30.55,28.58v1.28h-15v-1.28h15ZM30.55,25.24v1.28h-15v-1.28h15ZM30.15,0h-14.2c-1.7,0-3.08,1.52-3.08,3.38v7.92h20.36V3.38c0-1.87-1.38-3.38-3.08-3.38Z"/>
+  </g>
+</svg>

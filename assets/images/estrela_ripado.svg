@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 145.64">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_8);
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #d9d9d9;
+      }
+    </style>
+    <mask id="mask" x="-27.3" y="-13.22" width="190.5" height="188.33" maskUnits="userSpaceOnUse">
+      <g id="mask0_88_85" data-name="mask0 88 85">
+        <rect class="cls-3" x="-74.4" y="54.95" width="148.68" height="6.19" transform="translate(-54.89 39.01) rotate(-70.91)"/>
+        <rect class="cls-3" x="-62.03" y="59.12" width="148.68" height="6.19" transform="translate(-50.51 53.5) rotate(-70.91)"/>
+        <rect class="cls-3" x="-49.67" y="63.28" width="148.68" height="6.19" transform="translate(-46.12 67.98) rotate(-70.91)"/>
+        <rect class="cls-3" x="-37.3" y="67.44" width="148.68" height="6.19" transform="translate(-41.73 82.47) rotate(-70.91)"/>
+        <rect class="cls-3" x="-24.94" y="71.6" width="148.68" height="6.19" transform="translate(-37.35 96.96) rotate(-70.91)"/>
+        <rect class="cls-3" x="-12.57" y="75.77" width="148.68" height="6.19" transform="translate(-32.96 111.44) rotate(-70.91)"/>
+        <rect class="cls-3" x="-.21" y="79.93" width="148.68" height="6.19" transform="translate(-28.57 125.93) rotate(-70.91)"/>
+        <rect class="cls-3" x="12.16" y="84.09" width="148.68" height="6.19" transform="translate(-24.19 140.42) rotate(-70.91)"/>
+        <rect class="cls-3" x="24.52" y="88.26" width="148.68" height="6.19" transform="translate(-19.8 154.9) rotate(-70.91)"/>
+        <rect class="cls-3" x="36.89" y="92.42" width="148.68" height="6.19" transform="translate(-15.41 169.39) rotate(-70.91)"/>
+        <rect class="cls-3" x="49.25" y="96.58" width="148.68" height="6.19" transform="translate(-11.03 183.88) rotate(-70.91)"/>
+        <rect class="cls-3" x="61.62" y="100.75" width="148.68" height="6.19" transform="translate(-6.64 198.36) rotate(-70.91)"/>
+      </g>
+    </mask>
+    <linearGradient id="Gradiente_sem_nome_8" data-name="Gradiente sem nome 8" x1="-2.77" y1="-2453.61" x2="154.99" y2="-2443.46" gradientTransform="translate(0 -2377.21) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".33" stop-color="#ee7d00"/>
+      <stop offset="1" stop-color="#ffd336"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g class="cls-1">
+      <path class="cls-2" d="M71.49,0l21.21,53.35,57.29-3.69-44.19,36.66,21.21,53.35-48.52-30.69-44.19,36.66,14.2-55.63L0,59.32l57.3-3.69L71.49,0Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Camada_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41 41"><defs><style>.cls-1{fill:url(#Gradiente_sem_nome_61-2);}.cls-1,.cls-2,.cls-3{stroke-width:0px;}.cls-2{fill:url(#Gradiente_sem_nome_61);}.cls-3{fill:#fff;}</style><linearGradient id="Gradiente_sem_nome_61" x1="0" y1="20.5" x2="41" y2="20.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a4480"/><stop offset=".36" stop-color="#1c4581"/><stop offset=".52" stop-color="#234c86"/><stop offset=".65" stop-color="#30578e"/><stop offset=".76" stop-color="#42679a"/><stop offset=".85" stop-color="#5a7caa"/><stop offset=".94" stop-color="#7795bc"/><stop offset="1" stop-color="#92acce"/></linearGradient><linearGradient id="Gradiente_sem_nome_61-2" x1="7.86" y1="18.32" x2="33.5" y2="18.32" xlink:href="#Gradiente_sem_nome_61"/></defs><g id="Camada_1-2"><g id="Elipse_17-2"><circle class="cls-3" cx="20.5" cy="20.5" r="20.5"/><path class="cls-2" d="M20.5,1c10.75,0,19.5,8.75,19.5,19.5s-8.75,19.5-19.5,19.5S1,31.25,1,20.5,9.75,1,20.5,1M20.5,0C9.18,0,0,9.18,0,20.5s9.18,20.5,20.5,20.5,20.5-9.18,20.5-20.5S31.82,0,20.5,0h0Z"/></g><polygon class="cls-1" points="33.5 27.64 20.68 17.66 7.86 27.64 7.86 18.97 20.68 9 33.5 18.97 33.5 27.64"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: url(#Gradiente_sem_nome_6);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_6-2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" x1="0" y1="20.5" x2="41" y2="20.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c000f"/>
+      <stop offset=".16" stop-color="#60030e"/>
+      <stop offset=".33" stop-color="#6c0d0d"/>
+      <stop offset=".5" stop-color="#801f0b"/>
+      <stop offset=".66" stop-color="#9c3708"/>
+      <stop offset=".83" stop-color="#c15604"/>
+      <stop offset="1" stop-color="#ed7c00"/>
+      <stop offset="1" stop-color="#ee7d00"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_6-2" data-name="Gradiente sem nome 6" x1="8.17" y1="18.37" x2="33.19" y2="18.37" xlink:href="#Gradiente_sem_nome_6"/>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <circle id="Elipse_17-2" data-name="Elipse 17-2" class="cls-1" cx="20.5" cy="20.5" r="20"/>
+      <polygon class="cls-2" points="33.19 27.46 20.68 17.73 8.17 27.46 8.17 19.01 20.68 9.28 33.19 19.01 33.19 27.46"/>
+    </g>
+  </g>
+</svg>

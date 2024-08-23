@@ -79,13 +79,13 @@
 }
 
 .audio-player .btn-play{
-    background-image: url(../../assets/images/bt_play.svg);
+    background-image: url(../../assets/images/play.svg);
 }
 .audio-player .btn-pause{
-    background-image: url(../../assets/images/bt_pause.svg);
+    background-image: url(../../assets/images/pause.svg);
 }
 .audio-player .btn-transcricao{
-    background-image: url(../../assets/images/bt_trancricao.svg);
+    background-image: url(../../assets/images/transcricao.svg);
 }
 .audio-player .btn-player:active, .audio-player .btn-player:focus{
     transform: translateY(-3px);

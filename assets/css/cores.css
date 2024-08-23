@@ -3,24 +3,24 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: #1A4480;
-	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%);
+	--bg-gradiente-primario: #5C000F;
+	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #ffd336 50%, #ee7d00 92%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%) border-box;
+	linear-gradient(80deg, #5C000F 10%, #ffd336 50%, #ee7d00 92%) border-box;
 
 	--bg-gradiente-secundario: #92ACCE;
 	/* --gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%); */
-	--gradiente-secundario: linear-gradient(120deg, #1A4480 0%, #92ACCE 100%);
+	--gradiente-secundario: linear-gradient(120deg, #5C000F 0%, #ffd336 100%);
 
-	--cor-primaria: #92ACCE;
-	--cor-secundaria: #CF9993;
-	--cor-terciaria: #1A4480;
+	--cor-primaria: #ee7d00;
+	--cor-secundaria: #ffd336;
+	--cor-terciaria: #5C000F;
 
-	--gradiente-fundo: #92ACCE;
-	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
-	radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%),
-	radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%);
+	--gradiente-fundo: #5C000F;
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #ee7d00 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 100% 100%, #ffd336 0%, transparent 60%),
+	radial-gradient(farthest-corner at 0% 100%, #fff 0%, transparent 50%);
 }
 
 /*layout com fundo gradiente*/
