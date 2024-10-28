@@ -53,6 +53,7 @@
     text-align: center;
 }
 .game-body .slot {
+    min-height: 100px;
     height: auto;
     width: 100%;
     background-color: transparent;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.8 9.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ee7d00;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #5c000f;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="4.33" cy="4.97" r="4.31"/>
+  <path class="cls-2" d="M4.45,7.66L.79,4l1.32-1.32,2.34,2.35L9.47.01l1.32,1.31-6.34,6.34Z"/>
+</svg>

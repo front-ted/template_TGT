@@ -91,12 +91,18 @@
     border-radius: 10px;
     border-width: 3px;
     border-style: solid;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    width: 100%;
 }
-.f-positivo i, .f-negativo i{
+.f-positivo i.fas, .f-negativo i.fas{
     font-size: 40px;
     margin-right: 10px;
 }
-.f-positivo i{color: #28afb2;}
-.f-negativo i{color: #cd6667;}
+.f-positivo i.fas{color: #28afb2;}
+.f-negativo i.fas{color: #cd6667;}
+
+@media (max-width: 780px){
+    .esquemaDaBru .alt-c, .esquemaDaBru .alt-e {font-size: .8em;}
+    .multipla-escolha button{margin-left: 45px;}
+    .multipla-escolha button::before{left: -65px;}
+}

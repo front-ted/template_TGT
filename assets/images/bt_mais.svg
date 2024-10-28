@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44.5 44.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_17);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: url(#Gradiente_sem_nome_24);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_24" data-name="Gradiente sem nome 24" x1="0" y1="22.25" x2="44.5" y2="22.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c000f"/>
+      <stop offset=".16" stop-color="#60030e"/>
+      <stop offset=".32" stop-color="#6c0e0d"/>
+      <stop offset=".5" stop-color="#81200b"/>
+      <stop offset=".67" stop-color="#9f3908"/>
+      <stop offset=".84" stop-color="#c45904"/>
+      <stop offset="1" stop-color="#ee7d00"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_17" data-name="Gradiente sem nome 17" x1="12.25" y1="22.25" x2="32.25" y2="22.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c000f"/>
+      <stop offset=".16" stop-color="#60030e"/>
+      <stop offset=".33" stop-color="#6c0d0d"/>
+      <stop offset=".5" stop-color="#801f0b"/>
+      <stop offset=".66" stop-color="#9c3708"/>
+      <stop offset=".83" stop-color="#c15604"/>
+      <stop offset="1" stop-color="#ed7c00"/>
+      <stop offset="1" stop-color="#ee7d00"/>
+    </linearGradient>
+  </defs>
+  <circle id="Elipse_21" data-name="Elipse 21" class="cls-2" cx="22.25" cy="22.25" r="21.25"/>
+  <polygon class="cls-1" points="32.25 20.56 23.94 20.56 23.94 12.25 20.56 12.25 20.56 20.56 12.25 20.56 12.25 23.94 20.56 23.94 20.56 32.25 23.94 32.25 23.94 23.94 32.25 23.94 32.25 20.56"/>
+</svg>

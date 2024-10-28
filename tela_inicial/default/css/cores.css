@@ -3,15 +3,42 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: #5C000F;
-	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #ffd336 50%, #ee7d00 92%);
+	--cor-primaria: #ee7d00;
+	--cor-secundaria: #ffd336;
+	--cor-terciaria: #5C000F;
+
+	--bg-gradiente-primario: var(--cor-terciaria);
+	--gradiente-primario: linear-gradient(30deg, var(--cor-terciaria) 10%, rgba(50,176,175,1) 50%, var(--cor-secundaria) 92%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%) border-box;
+	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
 
 	--bg-gradiente-secundario: rgb(80,215,226);
-	--gradiente-secundario: linear-gradient(60deg, rgba(80,215,226,1) 0%, rgba(46,137,151,1) 18%, rgba(11,59,75,1) 100%);
+	--gradiente-secundario: linear-gradient(60deg, var(--cor-primaria) 0%, var(--cor-primaria) 18%, var(--cor-terciaria) 100%);
 
-	--cor-primaria: #5C000F;
-	--cor-secundaria: #ee7d00;
+
+	--gradiente-fundo: var(--cor-terciaria);
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, var(--cor-terciaria) 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 0 100%, var(--cor-secundaria) 0%, transparent 60%), 
+	linear-gradient(180deg, var(--cor-primaria) 0%, #fff 100%);
 }
+/*layout com fundo gradiente*/
+.bg-gradiente{
+	background-image: var(--gradiente-bg);
+}
+.bg-gradiente .pagina > *{
+	color: #fff;
+}
+
+/*elementos que levam gradiente primário - três cores*/
+#topo, .prognroll-bar{
+	background: var(--bg-gradiente-primario);
+	background: var(--gradiente-primario);
+}
+.circulo-2, .circulo-4 {
+	background: var(--cor-primaria);
+}
+.btMenuPrint, .drag-column h3{background-color: var(--cor-terciaria);}
+.btMenuPrint:hover, 
+.menuPrint.dropdown-menu li a:hover::before,
+.dropdown-bubble .dropdown-menu{background-color: var(--cor-primaria);}

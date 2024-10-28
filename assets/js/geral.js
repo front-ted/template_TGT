@@ -14,7 +14,6 @@ window.addEventListener('load', function(){
     $('.botao').click(function(){
       $(this).addClass('visitado');
     });
-    
 })
 
 // reposicionamento do botao do menu
@@ -25,6 +24,23 @@ $(window).scroll(function () {
 
   // if user scrolls down..
   if (topPos > 100) {
+    $('.bt-hamburguer').css("top", "20px");
+    $('.bt-fecharmenu').css("top", "20px");
+  } else {
+    $('.bt-hamburguer').css("top", "150px");      
+    $('.bt-fecharmenu').css("top", "150px");      
+  }
+
+}); // scroll END
+
+
+// MODO ESCURO
+$(window).scroll(function () {
+
+  var topPos = $(this).scrollTop();
+
+  // if user scrolls down..
+  if (topPos > 0) {
     $('body').removeClass("top60");
     $('body').addClass("top00");
     $('.bt-hamburguer').css("top", "20px");
@@ -36,9 +52,7 @@ $(window).scroll(function () {
     $('.bt-fecharmenu').css("top", "150px");      
   }
 
-}); // scroll END
-
-
+});
 var isDarkMode = true; // Controla o modo atual (escuro/claro)
 
 function toggleBackgroundImage() {
@@ -51,3 +65,29 @@ function toggleBackgroundImage() {
         button.style.backgroundImage = "url('../assets/images/modo_claro.svg')";
     }
 }
+
+$(".btn-tema_pagina").click(function () {
+  console.log($(".btn-tema_pagina"))
+  if ($("body").hasClass('bg-claro')) {
+      $("body").removeClass('bg-claro')
+      $("body").addClass("bg-escuro");
+  } else if ($("body").hasClass('bg-escuro')) {
+      $("body").removeClass('bg-escuro')
+      $("body").addClass("bg-claro")
+  }
+});
+
+// MODO ESCURO
+
+// caixas expansiveis
+$('.caixa-container button.btpluscaixa').click(function(){
+  let caixa = $(this).prev()
+  if(caixa.hasClass('aberta')){
+      caixa.removeClass('aberta')
+      $(this).css('background-image', 'url("../assets/images/bt_mais.svg")')
+  } else {
+      caixa.addClass('aberta')
+      $(this).css('background-image', 'url("../assets/images/bt_menos.svg")')
+  }
+})
+

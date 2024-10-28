@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="../assets/css/animate.min.css" />
         <!-- hover.css https://ianlunn.github.io/Hover/ -->
         <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!-- Print -->
-        <link rel="stylesheet" href="../assets/css/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Atividade de verdadeiro ou falso -->
@@ -29,10 +27,11 @@
         <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
         <link rel="stylesheet" href="../assets/css/template.css">
     
     </head>
-    <body>
+    <body class="bg-claro">
         <!-- Preloader OBRIGATÓRIO -->
         <div class="preloader">
             <div class="anim"></div>
@@ -44,12 +43,14 @@
         <header id="topo">
             <div class="topo-logo">
                 <div class="container">
-                    <h1 id="nome-curso" class="only-print">Nome do curso</h1>    
+                    <h1 id="nome-curso" class="only-print">Técnico em Guia de Turismo</h1>  
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>  
                 </div>
             </div>
         </header>
         <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">     
+        <section id="booklet">   
+            <div class="layer-preta no-print"></div>  
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="pagina container">
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                     <div class="box-atividade">
-                        <p class="titulo-ativ"><strong>Múltipla escolha</strong></p>
+                        <p class="titulo-ativ"><strong>Perguntas e respostas</strong></p>
                         <p>Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         <div class="esquemaDaBru multipla-escolha">
                             <p class="enunciado" tabindex="0">1) Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</p>
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-atividade">
+                    <div class="box-atividade d-none d-lg-block">
                         <p class="titulo-ativ"><strong>Arrasta e solta</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         <div id="content-game">
@@ -197,7 +198,7 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta correta! </h5>
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Resposta correta</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -206,8 +207,7 @@
                                                 <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid" alt="">
                                             </div>
                                             <div class="col-12 col-lg-8">
-                                                <p>Muito bem! Este item faz parte desta etapa de produção.
-                                                </p>
+                                                <p>Muito bem! Você acertou.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header bg-danger">
-                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Resposta incorreta</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -229,8 +229,7 @@
                                                 <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid" alt="">
                                             </div>
                                             <div class="col-12 col-lg-8">
-                                                <p>Este item não faz parte desta etapa de produção. Tente novamente.
-                                                </p>
+                                                <p>Ops, tente novamente!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -357,7 +356,7 @@
                                                     <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="col-12 col-lg-8">
-                                                    <p>Muito bem! Você acertou!</p>
+                                                    <p>Muito bem! Você acertou.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +394,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="box-atividade">
+                    <div class="box-atividade d-none d-lg-block">
                         <p class="titulo-ativ"><strong>Jogo da memória</strong></p>
                         <p>Associe as cartas das fontes históricas com as imagens que as representam.</p>
                         <div class="jogoMemoria">
@@ -561,6 +560,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div> 
             </section>
             <!-- Paginação-->

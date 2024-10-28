@@ -1,12 +1,6 @@
 
 
 $(document).ready(function(){
-
-	$('.voltar-topo').click(function(){
-		$('html, body').animate({scrollTop:0}, 'slow'); //slow, medium, fast
-	})
-
-
 	
 	// Verifica e completa todos os cards nos lugares certos
 	//

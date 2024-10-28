@@ -442,9 +442,6 @@ button, a {
 .tab-content .tab-pane ul li{
   display: list-item !important;
 }
-.tab-content {
-  page-break-inside: avoid !important;
-}
 .tab-content > .tab-pane.fade {
   opacity: 1 !important;
 }
@@ -586,7 +583,6 @@ p{
   display: block;
   padding: 1.6rem;
   border: 2px solid;
-  page-break-inside: avoid;
   line-height: 1.2;
   margin: 1.2rem 0;
   max-width: 100%;
@@ -677,3 +673,37 @@ iframe, iframe.youtube-pl{
 .modal-header button{
   display: none;
 }
+.destaque{
+  width: 80%;
+  border: 2px solid;
+  margin: 20px auto;
+  padding: 10px;
+}
+.destaque.gradiente{background: transparent;}
+/* código para tabela não desconfigurar na versão impressa */
+table.text-left.align-middle {
+  width: 80% !important;
+  border-collapse: collapse !important;
+  margin-bottom: 10px !important;
+  margin: auto !important;
+}
+
+table.text-left.align-middle th {
+  border: 1px solid black !important;
+  padding: 8px !important;
+  text-align: left !important;
+  width: 50% !important;
+  display: table-cell !important;
+  font-weight: bold !important;
+}
+
+table.text-left.align-middle td {
+  border: 1px solid black !important;
+  padding: 8px !important;
+  text-align: left !important;
+  width: 50% !important;
+}
+.figure-caption{
+  margin-top: 10px;
+}
+/* código para tabela não desconfigurar na versão impressa */

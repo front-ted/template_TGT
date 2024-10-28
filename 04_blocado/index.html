@@ -16,18 +16,17 @@
         <link rel="stylesheet" href="../assets/css/hover-min.css" />
         <!--Splide - slideshow-->
         <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Print -->
-        <link rel="stylesheet" href="../assets/css/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Áudio customizado -->
         <link rel="stylesheet" href="../assets/css/player.css">
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
         <link rel="stylesheet" href="../assets/css/template.css">
     
     </head>
-    <body>
+    <body class="bg-claro">
         <!-- Preloader OBRIGATÓRIO -->
         <div class="preloader">
             <div class="anim"></div>
@@ -39,12 +38,14 @@
         <header id="topo">
             <div class="topo-logo">
                 <div class="container">
-                    <h1 id="nome-curso" class="only-print">Nome do curso</h1>    
+                    <h1 id="nome-curso" class="only-print">Técnico em Guia de Turismo</h1> 
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
                 </div>
             </div>
         </header>
         <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">       
+        <section id="booklet">  
+            <div class="layer-preta no-print"></div>       
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="pagina">
@@ -66,10 +67,16 @@
                     </div>
                     <div class="container">
                         <h5>Citação</h5>
-                        <blockquote class="blockquote">
-                            <p>"Educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo."</p>
-                        </blockquote>
+                        <figure class="text-end">
+                            <blockquote class="blockquote">
+                                <p>"Educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Paulo Freire <cite title="Source Title">Título</cite>
+                            </figcaption>
+                        </figure>
                     </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div> 
             </section>
             <!-- Paginação-->

@@ -3,24 +3,27 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: #5C000F;
-	--gradiente-primario: linear-gradient(30deg, #5C000F 10%, #ffd336 50%, #ee7d00 92%);
-
-	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, #5C000F 10%, #ffd336 50%, #ee7d00 92%) border-box;
-
-	--bg-gradiente-secundario: #ffd336;
-	/* --gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%); */
-	--gradiente-secundario: linear-gradient(120deg, #5C000F 0%, #ffd336 100%);
-
 	--cor-primaria: #ee7d00;
 	--cor-secundaria: #ffd336;
 	--cor-terciaria: #5C000F;
 
-	--gradiente-fundo: #5C000F;
-	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #ee7d00 0%, transparent 60%), 
-	radial-gradient(farthest-corner at 100% 100%, #ffd336 0%, transparent 60%),
-	radial-gradient(farthest-corner at 0% 100%, #fff 0%, transparent 50%);
+	--bg-gradiente-topo: var(--cor-terciaria);
+	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
+
+	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
+	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-secundaria) 92%) border-box;
+
+	--bg-gradiente-menu: var(--cor-terciaria);
+	--gradiente-menu: radial-gradient(farthest-corner at 0 0, var(--cor-terciaria) 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 100% 100%, var(--cor-secundaria) 0%, transparent 60%), 
+	linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-primaria) 100%);
+
+	--gradiente-referencias: radial-gradient(circle at 0 10%, var(--cor-primaria) 0, transparent 50%), radial-gradient(circle at 40% 150%, var(--cor-secundaria) 0, #fff 60%);
+
+	--gradiente-fundo: var(--cor-terciaria);
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, var(--cor-terciaria) 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 0 100%, var(--cor-secundaria) 0%, transparent 60%), 
+	linear-gradient(180deg, var(--cor-primaria) 0%, #fff 100%);
 }
 
 /*layout com fundo gradiente*/
@@ -32,42 +35,47 @@
 	color: #fff;
 }
 
+/*página de referências*/
+.referencias{
+    background: var(--gradiente-referencias);
+}
 
 /*elementos que levam gradiente primário - três cores*/
 #topo, .prognroll-bar{
-	background: var(--bg-gradiente-primario);
-	background: var(--gradiente-primario);
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
 }
 .borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
 	color: #000;
-	filter: drop-shadow(rgba(82, 82, 82, 0.3) 7px 7px 5px); /* Definindo a opacidade apenas na sombra */
+}
+.destaque.gradiente{
+	background: linear-gradient(270deg, var(--cor-secundaria) 0%, var(--cor-terciaria) 100%);
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-.destaque.gradiente, 
-.multipla-escolha button::before, .game-titulo, .offcanvas,
+.modal-header,
+.multipla-escolha button::before, .game-titulo,
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
 .audio-player input[type=range]:focus::-webkit-slider-runnable-track{
-	background: var(--bg-gradiente-secundario);
-	background: var(--gradiente-secundario);
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
 }
 .audio-player input[type=range]::-moz-range-track,
 .audio-player input[type=range]::-moz-range-thumb {
-	background: var(--bg-gradiente-secundario);
-	background: var(--gradiente-secundario);
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
 }
-.modal-header{
-	background: var(--bg-gradiente-primario);
-	background: var(--gradiente-primario);
+.offcanvas{
+	background: var(--bg-gradiente-menu);
+	background: var(--gradiente-menu);
 }
-
 
 /*elementos que levam a cor primária*/
-.carousel-indicators .indicador, .splide__pagination__page, .modal-body,
+.carousel-indicators .indicador, .splide__pagination__page, .modal-body, 
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast, .table-border{
+.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast, .accordion-body{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
@@ -76,22 +84,16 @@
 	border-right-color: var(--cor-primaria);
 }
 .carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
-.game-associar-colunas button.item, .table-header {
+.game-associar-colunas button.item {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
-/* .botao, */ 
-.game-body .card, .game-associar-colunas button.item:hover::before,  
+.botao, .game-body .card, .game-associar-colunas button.item:hover::before, 
 .game-associar-colunas button.selecionado, .game-associar-colunas button.selecionado::before,
 .txtacao{
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }
-
-.botao{
-	border-color: var(--cor-primaria);
-}
-
 .hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
 thead, .accordion-button, .accordion-button:not(.collapsed){background-color: var(--cor-primaria);}
 
@@ -109,3 +111,5 @@ td{
 mark{background: var(--cor-secundaria);}
 
 /*elementos que levam a cor terciária*/
+.bt-hamburguer, 
+.offcanvas-header .bt-fecharmenu{background: var(--cor-terciaria);}

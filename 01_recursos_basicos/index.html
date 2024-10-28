@@ -16,8 +16,6 @@
         <link rel="stylesheet" href="../assets/css/hover-min.css" />
         <!--Splide - slideshow-->
         <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Print -->
-        <link rel="stylesheet" href="../assets/css/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Áudio customizado -->
@@ -28,7 +26,7 @@
         <link rel="stylesheet" href="../assets/css/template.css">
     
     </head>
-    <body>
+    <body class="bg-claro">
         <!-- Preloader OBRIGATÓRIO -->
         <div class="preloader">
             <div class="anim"></div>
@@ -40,33 +38,33 @@
         <header id="topo">
             <div class="topo-logo">
                 <div class="container">
-                    <h1 id="nome-curso" class="only-print">Nome do curso</h1>    
+                    <h1 id="nome-curso" class="only-print">Técnico em Guia de Turismo</h1>  
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>
                 </div>
             </div>
         </header>
         <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
         <section id="booklet">
+            <div class="layer-preta no-print"></div>
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="pagina container">
-                    <h2>h2 - Título</h2>
+                    <h2>Título</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <h3>h3 - Subtítulo</h3>
+                    <h3>Subtítulo</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                     <h4>h4 - Subtítulo</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                     <h5>h5 - Subtítulo</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
 
-                    <h3>Tag mark</h3>
+                    <h3>Marca texto</h3>
                     <p>Podemos usar a <i>tag mark</i> para <mark>destacar</mark> o texto.</p>
                     
                     <h3>Citação</h3>
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p>"Educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo."</p>
-                        </blockquote>
-                    </figure>
+                    <div class="citacao">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices."</p>
+                    </div>
 
                     <h2>Caixas de destaque</h2>
                     <p>As caixas de destaque são elementos gráficos usados para chamar a atenção do leitor. Podem ser utilizadas com diferentes contextos, como informações importantes, conceitos-chave, observações, exemplos e dicas.</p>
@@ -82,12 +80,12 @@
                     </div>
                     <div class="grafismo">
                         <div class="destaque borda-colorida icone atencao">
-                            <p>Destaque com borda e com ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                            <p>Destaque com borda e ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         </div>
                     </div>
                     <div class="grafismo">
                         <div class="destaque gradiente">
-                            <p>Destaque com fundo e sem ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                            <p>Destaque gradiente sem ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         </div>
                     </div>
                     <div class="grafismo">
@@ -161,12 +159,62 @@
                         </div>
                     </div>
 
+                    <h2>Flip cards</h2>
+                    <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                        <div class="flip-card">
+                            <div class="flip-card-inner radius">
+                                <div class="flip-card-front">
+                                    <p>FRENTE</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>VERSO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner radius">
+                                <div class="flip-card-front">
+                                    <p>FRENTE</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>VERSO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner radius">
+                                <div class="flip-card-front">
+                                    <p>FRENTE</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>VERSO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Saiba mais</h2>
+                    <div class="caixa-container destaque icone exemplo borda-colorida">
+                        <div class="caixa-exp">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                          <ul class="marcador-check">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</li>
+                          </ul>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                        <button class="btpluscaixa"></button>
+                    </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div> 
                 <div class="pagina container">
                     <h2>Tabela</h2>
                     <p>O conteúdo de tabelas deve ser apresentado em formato de texto, ou seja, digitado. As tabelas são empregadas para dados quantitativos. Por outro lado, quando nos referimos a dados qualitativos, utilizamos o termo "quadro".</p>
                     <!--Tabela com largura de colunas igualmente destribuídas usando as classes do bootstrap-->
-                    <div class="table table-responsive">
+                    <div class="table-responsive table">
                         <table class="text-left align-middle">
                             <thead>
                                 <tr>
@@ -205,11 +253,80 @@
                     <p><b>Dicas de boa prática</b>: quando solicitado na análise didática, incluir referência, bem como indicar a ideia do que se trata.</p>
                     <!--a estrutura das figuras deve ser essa, com essas classes para manter o padrão de funcionamento e estética, caso precise adicione uma nova classe para estilo específico-->
                     <figure class="my-5">
-                        <div class="figure-img mx-auto mb-4">
-                            <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
+                        <div class="figure-img mb-4">
+                            <img class="img-fluid d-block borda-colorida mx-auto" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
                         </div>
                         <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
                     </figure>
+                    <h3>Figura com zoom no mobile</h3>
+                    <figure class="my-5 no-print">
+                        <img src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+                        <a href="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+                        </a>
+                    </figure>
+
+                    <h2>Lista com marcadores</h2>
+                    <h3>Marcador padrão</h3>
+                    <ul class="marcador-padrao">
+                        <li>Marcador padrão</li>
+                        <li>Marcador padrão</li>
+                        <li>Marcador padrão</li>
+                    </ul>
+                    <h3>Marcador seta</h3>
+                    <ul class="marcador-seta">
+                        <li>Marcador seta</li>
+                        <li>Marcador seta</li>
+                        <li>Marcador seta</li>
+                    </ul>
+                    <h3>Marcador check</h3>
+                    <ul class="marcador-check">
+                        <li>Marcador check</li>
+                        <li>Marcador check</li>
+                        <li>Marcador check</li>
+                    </ul>
+                    <h3>Marcador numeral</h3>
+                    <ol class="marcador-numeral">
+                        <li>Marcador 1</li>
+                        <li>Marcador 2</li>
+                        <li>Marcador 3</li>
+                        <li>Marcador 4</li>
+                        <li>Marcador 5</li>
+                        <li>Marcador 6</li>
+                        <li>Marcador 7</li>
+                        <li>Marcador 8</li>
+                        <li>Marcador 9</li>
+                    </ol>
+                    
+                    <h3>Marcador letras</h3>
+                    <ol type="a" class="marcador-letras">
+                        <li>Marcador a</li>
+                        <li>Marcador b</li>
+                        <li>Marcador c</li>
+                        <li>Marcador d</li>
+                        <li>Marcador e</li>
+                        <li>Marcador f</li>
+                        <li>Marcador g</li>
+                        <li>Marcador h</li>
+                        <li>Marcador i</li>
+                        <li>Marcador j</li>
+                        <li>Marcador k</li>
+                        <li>Marcador l</li>
+                        <li>Marcador m</li>
+                        <li>Marcador n</li>
+                        <li>Marcador o</li>
+                        <li>Marcador p</li>
+                        <li>Marcador q</li>
+                        <li>Marcador r</li>
+                        <li>Marcador s</li>
+                        <li>Marcador t</li>
+                        <li>Marcador u</li>
+                        <li>Marcador v</li>
+                        <li>Marcador w</li>
+                        <li>Marcador x</li>
+                        <li>Marcador y</li>
+                        <li>Marcador z</li>
+                    </ol>
 
                     <h2>Infográfico </h2>
                     <p>Recurso que combina texto e imagem com o objetivo de tornar uma informação mais clara e interessante. Solicitado quando há relação entre texto e imagem e quando existem itens concretos a ilustrar. </p>
@@ -256,6 +373,7 @@
                             <img class="img-fluid d-block mx-auto w-50" src="img/ex_ruim.gif">
                         </div>
                     </figure>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div>    
                 <div class="pagina container">
                     <h2>Tooltip e Pop-over</h2>
@@ -271,13 +389,13 @@
                     <h3>Popover</h3>
                     <p>Botão com recurso <button type="button" class="botao hvr-sweep-to-right" data-bs-toggle="popover" title="Título do popover" data-bs-content="Conteúdo do popover que pode conter um parágrafo.">popover</button></p>
 
-                    <h2>Modal simples</h2>   
-                    <!-- Botão padrão para modal simples -->
+                    <h2>Modal pequena</h2>   
+                    <!-- Botão padrão para modal pequena -->
                     <button type="button" class="botao check hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#modal1">
-                        Modal simples
+                        Modal pequena
                     </button>
                     
-                    <!-- Modal simples -->
+                    <!-- Modal pequena -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -292,24 +410,89 @@
                         </div>
                     </div>
 
-                    <h4>Modal 100%</h4>   
+                    <h4>Modal grande</h4>   
                     <!-- Button trigger modal -->
                     <button type="button" class="botao check hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#modal2">
-                        Modal 100%
+                        Modal grande
                     </button>
                     
-                    <!-- Modal -->
+                    <!-- Modal grande -->
                     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Título da modal</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                    <div class="container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Modal grande com áudio e transcrição</h4>
+
+                    <button type="button" class="botao check hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#modal3">
+                        Modal grande com áudio
+                    </button>
+                    
+                    <!-- Modal grande com áudio -->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Título da modal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <div class="bg-podcast no-print">
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <p>Ouça o <i>podcast</i> a seguir.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                <div class="audio-player no-print">
+                                                    <audio>
+                                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                    </audio>
+                                                    <div class="row">
+                                                        <div class="timestamp">00:00 | 00:00</div>
+                                                        <div class="barra">
+                                                            <input type="range" value="0" max="4140" step="any">
+                                                        </div>
+                                                        <div class="botoes">
+                                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-transcricao" id="accordion-transcricao">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="heading-transcricao">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-transcricao" aria-expanded="true" aria-controls="collapse-transcricao">
+                                                  Transcrição
+                                                </button>
+                                              </h2>
+                                              <div id="collapse-transcricao" class="accordion-collapse collapse show" aria-labelledby="heading-transcricao" data-bs-parent="#accordion-transcricao">
+                                                <div class="accordion-body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
                                     </div>
@@ -385,6 +568,7 @@
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Texto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Texto 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
                     </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div>
                 <div class="pagina">
                     <div class="container">
@@ -479,7 +663,6 @@
                             <div class="bg-podcast no-print">
                                 <div class="d-flex justify-content-center flex-column align-items-center">
                                     <p>Ouça o <i>podcast</i> a seguir.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <div class="audio-player no-print">
                                         <audio>
                                             <source src="podcast/podcast.mp3" type="audio/mpeg">
@@ -520,6 +703,49 @@
                                     </div>
                             </div>
 
+                            <h3>Áudio</h3>
+                            <div class="bg-podcast no-print audio">
+                                <div class="d-flex justify-content-center flex-column align-items-center">
+                                    <div class="audio-player no-print">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <div class="row">
+                                            <div class="timestamp">00:00 | 00:00</div>
+                                            <div class="barra">
+                                                <input type="range" value="0" max="4140" step="any">
+                                            </div>
+                                            <div class="botoes">
+                                                <button title="Tocar" class="btn-play btn-player"></button>
+                                                <button title="Pause" class="btn-pause btn-player"></button>
+                                                <button title="Transcrição" data-bs-toggle="modal"
+                                                    data-bs-target="#modal-transcricao-audio2"
+                                                    class="btn-transcricao btn-player"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
                             <h2>Vídeo</h2>
                             <p>O vídeo é um recurso que pode enriquecer significativamente a experiência de aprendizado, uma vez que possibilita a abordagem de diversas situações, como a demonstração de processos complexos, simulações e experimentos, estudos de caso, entrevistas e depoimentos.</p>
                             <p><b>Objetivos educacionais com os quais combinam</b>: conhecer, compreender e aplicar.</p>
@@ -528,7 +754,8 @@
                                 <iframe src="https://www.youtube.com/embed/1DhSfseMvNk?si=jBpb_1efs-eGcRb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>   
+                    </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div>   
             </section>
             <!-- Paginação-->
