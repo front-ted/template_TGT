@@ -251,17 +251,19 @@ tbody td:first-child{border-left: 0;}
 
 /*estilo de botão padrão*/
 .botao{
-    border-radius: 25px;
+    border-radius: 28px;
     border-width: 3px;
     border-style: solid;
     background: #fff;
     padding: 10px 25px;
     font-weight: bold;
+
 }
+a.botao{text-decoration: none;}
 .botao::before{
     border-radius: 30px;
 }
-.botao.visitado::after{
+.botao.check.visitado::after{
     background: url('../images/check.svg') no-repeat;
     height: 30px;
     width: 30px;
@@ -269,6 +271,43 @@ tbody td:first-child{border-left: 0;}
     top: -10px;
     right: -10px;
     content: '';
+}
+
+.bt-download{
+    padding-left: 90px;
+    padding-right:30px;
+    position: relative;
+    margin: 30px auto;
+    display: block;
+    width: 200px;
+}
+.bt-download::after{
+    content: '';
+    position: absolute;
+    background: url('../images/ico_download.svg') no-repeat;
+    height: 87px;
+    width: 87px;
+    left: -20px;
+    top: -20px;
+}
+
+
+.bt-pdf{
+    padding-left: 90px;
+    padding-right:30px;
+    position: relative;
+    margin: 30px auto;
+    display: block;
+    width: 240px;
+}
+.bt-pdf::after{
+    content: '';
+    position: absolute;
+    background: url('../images/ico_pdf.svg') no-repeat;
+    height: 87px;
+    width: 87px;
+    left: -20px;
+    top: -20px;
 }
 
 /*modais*/
@@ -613,6 +652,13 @@ tbody td:first-child{border-left: 0;}
     transform: scale(1.1);
 }
 .bg-escuro .game-associar-colunas p{color: #000;}
+
+.bg-escuro .bt-download::after{
+    background: url('../images/ico_download_neg.svg') no-repeat;
+}
+.bg-escuro .bt-pdf::after{
+    background: url('../images/ico_pdf_neg.svg') no-repeat;
+}
 
 /*MODO ESCURO*/
 
