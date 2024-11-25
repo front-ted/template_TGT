@@ -673,8 +673,8 @@ iframe, iframe.youtube-pl{
 .modal-header button{
   display: none;
 }
-.destaque{
-  width: 80%;
+.accordion-transcricao, .modal.transcricao{
+  width: 100%;
   border: 2px solid;
   margin: 20px auto;
   padding: 10px;
