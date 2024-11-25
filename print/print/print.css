@@ -321,7 +321,7 @@
     margin-top: 10px;
   }
   /* código para tabela não desconfigurar na versão impressa */
-  }
+
   .accordion-transcricao, .modal.transcricao{
     width: 90%;
     border: 2px solid;
