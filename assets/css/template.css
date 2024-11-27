@@ -908,6 +908,55 @@ a.botao{text-decoration: none;}
   }
 /*FIM SAIBA MAIS*/
 
+/*BOTÃO PADRÃO PARA OBJETO*/
+.bt-objeto{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/objeto_espera.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.bt-objeto .camada-blur{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    transition: all .4s;
+}
+.bt-objeto:hover .camada-blur{
+    backdrop-filter: none;
+}
+
+.bt-objeto::after{
+    content: 'Acesse';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 52px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    color: #fff;
+    border-radius: 15px;
+    display: block;
+    z-index: 3;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    border: 2px solid #fff;
+    transition: all .4s;
+}
+.bt-objeto:hover::after{
+    background: #fff;
+}
+
+
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}
     .container-fluid .splide .splide__slide{

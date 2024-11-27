@@ -26,6 +26,12 @@
 	linear-gradient(180deg, var(--cor-primaria) 0%, #fff 100%);
 }
 
+/*ALTERAR MANUAL PARA TODOS OS CURSOS*/
+.bt-objeto .camada-blur{
+	background: rgba(238, 125, 0, 0.6);
+}
+/*ALTERAR PARA TODOS OS CURSOS*/
+
 /*layout com fundo gradiente*/
 .bg-gradiente{
 	background-color: var(--gradiente-fundo);
@@ -106,6 +112,9 @@ td{
 	background: var(--cor-primaria);
 	border-color: var(--cor-primaria)
 }
+
+
+.bt-objeto:hover::after{color: var(--cor-primaria);}
 
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}
