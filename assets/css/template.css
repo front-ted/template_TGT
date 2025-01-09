@@ -257,13 +257,17 @@ tbody td:first-child{border-left: 0;}
     background: #fff;
     padding: 10px 25px;
     font-weight: bold;
-
+    position: relative;
+    transition: all 0.6s;
 }
-a.botao{text-decoration: none;}
+
+.botao:hover{color: #fff;}
+
 .botao::before{
     border-radius: 30px;
 }
-.botao.check.visitado::after{
+
+.check.visitado::after{
     background: url('../images/check.svg') no-repeat;
     height: 30px;
     width: 30px;
@@ -279,6 +283,7 @@ a.botao{text-decoration: none;}
     position: relative;
     margin: 30px auto;
     display: block;
+    text-decoration: none;
     width: 200px;
 }
 .bt-download::after{
@@ -299,6 +304,7 @@ a.botao{text-decoration: none;}
     margin: 30px auto;
     display: block;
     width: 240px;
+    text-decoration: none;
 }
 .bt-pdf::after{
     content: '';

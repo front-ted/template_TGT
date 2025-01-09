@@ -90,7 +90,7 @@
 	border-right-color: var(--cor-primaria);
 }
 .carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
-.game-associar-colunas button.item {
+.game-associar-colunas button.item, .botao:hover {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
