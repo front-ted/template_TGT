@@ -113,6 +113,10 @@ td{
 	border-color: var(--cor-primaria)
 }
 
+.botao:hover{
+	color: #fff;
+	background: var(--cor-primaria);
+}
 
 .bt-objeto:hover::after{color: var(--cor-primaria);}
 
