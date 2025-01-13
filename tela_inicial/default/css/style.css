@@ -380,8 +380,8 @@ ul {
     font-size: 32px;
   }
   h3 {
-    background: #d4eeee;
-    margin: 0 0 -1px;
+    background: rgba(255,255,255,.9);
+    margin: 0;
     padding: 10px 20px;
     display: flex;
     border-top-left-radius: 20px;
@@ -404,7 +404,7 @@ ul {
   .grupo .drag-column {
     min-height: 167px;
     margin-bottom: 50px;
-    background: #d4eeee;
+    background: rgba(255,255,255,.9);
     overflow-x: scroll;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
