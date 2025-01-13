@@ -990,7 +990,7 @@ tbody td:first-child{border-left: 0;}
 @media screen and (max-width: 780px){
     p, li, th, td, a, 
     .figure-caption, .botao,
-    .tab-pane {font-size: .8em;}
+    .tab-pane, .citacao * {font-size: .8em;}
     .paragrafo-destaque{font-size: 1em;}
     h1{font-size: 5vw;}
     .topo-logo{
