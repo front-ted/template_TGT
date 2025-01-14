@@ -332,4 +332,5 @@
 
   ul li{list-style-type: disc !important;}
   ol li{list-style-type: auto !important;}
+  ol[type="a"] li{list-style-type: lower-alpha !important;}
 }
