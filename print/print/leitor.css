@@ -303,7 +303,7 @@ th{
 .pagina *.clique{
   display: none;
 }
-.pagina .accordion h2{
+.pagina .accordion h2, .modal-title{
   font-size: 1.1rem;
 }
 
@@ -718,3 +718,5 @@ table.text-left.align-middle td {
 ul li{list-style-type: disc !important;}
 ol li{list-style-type: auto !important;}
 ol[type="a"] li{list-style-type: lower-alpha !important;}
+
+.bt-tooltip{text-decoration: underline;}
