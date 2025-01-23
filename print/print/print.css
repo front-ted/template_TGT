@@ -168,7 +168,7 @@
   .accordion-item{
     page-break-inside: avoid;
   }
-  .accordion-header button, .modal-title{font-size: 15pt;}
+  .accordion-header button, .modal-title{font-size: 15pt !important;}
 
   /*carousel*/
   .carousel{
