@@ -122,7 +122,7 @@
 }	
 .pagina h5	{
   display: block;
-  font-size: 1em;
+  font-size: .83em;
   margin-top: 1.67em;
   margin-bottom: 1.67em;
   margin-left: 0;
@@ -131,7 +131,7 @@
 }	
 .pagina h6{
   display: block;
-  font-size: 1em;
+  font-size: .67em;
   margin-top: 2.33em;
   margin-bottom: 2.33em;
   margin-left: 0;
@@ -535,6 +535,7 @@ p{
 .container{
   max-width: unset;
   width: 100%;
+  padding: 20px;
 }
 .icone::before{
   display: none !important;   
@@ -672,8 +673,8 @@ iframe, iframe.youtube-pl{
 .modal-header button{
   display: none;
 }
-.accordion-transcricao, .modal.transcricao{
-  width: 100%;
+.destaque{
+  width: 80%;
   border: 2px solid;
   margin: 20px auto;
   padding: 10px;
@@ -706,7 +707,6 @@ table.text-left.align-middle td {
   margin-top: 10px;
 }
 /* código para tabela não desconfigurar na versão impressa */
-
 .accordion-transcricao, .modal.transcricao{
   width: 90%;
   border: 2px solid;
