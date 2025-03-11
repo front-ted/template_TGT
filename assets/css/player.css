@@ -32,7 +32,7 @@
 }
 .audio-player::before{
     content:'';
-    background: url('../images/podcast_esq.png') no-repeat;
+    background: url('../images/podcast_esq.svg') no-repeat;
     height: 179px;
     width: 185px;
     position: absolute;
@@ -41,7 +41,7 @@
 }
 .audio-player::after{
     content:'';
-    background: url('../images/podcast_dir.png') no-repeat;
+    background: url('../images/podcast_dir.svg') no-repeat;
     height: 188px;
     width: 193px;
     position: absolute;
