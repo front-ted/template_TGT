@@ -11,7 +11,7 @@
 	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-secundaria) 92%) border-box;
+	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
 
 	--bg-gradiente-menu: var(--cor-terciaria);
 	--gradiente-menu: radial-gradient(farthest-corner at 0 0, var(--cor-terciaria) 0%, transparent 60%), 
@@ -55,18 +55,14 @@
 	background: var(--gradiente-borda);
 	color: #000;
 }
-.destaque.gradiente{
-	background: linear-gradient(270deg, var(--cor-secundaria) 0%, var(--cor-terciaria) 100%);
-}
 
 /*elementos que levam gradiente secundário - duas cores*/
-.modal-header,
+.modal-header, .destaque.gradiente,
 .multipla-escolha button::before, .game-titulo,
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
 .audio-player input[type=range]:focus::-webkit-slider-runnable-track{
-	background: var(--bg-gradiente-topo);
-	background: var(--gradiente-topo);
+	background: linear-gradient(270deg, var(--cor-secundaria) 0%, var(--cor-terciaria) 100%);
 }
 .audio-player input[type=range]::-moz-range-track,
 .audio-player input[type=range]::-moz-range-thumb {
@@ -90,7 +86,7 @@
 	border-right-color: var(--cor-primaria);
 }
 .carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
-.game-associar-colunas button.item, .botao:hover {
+.game-associar-colunas button.item {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
@@ -112,16 +108,16 @@ td{
 	background: var(--cor-primaria);
 	border-color: var(--cor-primaria)
 }
-
 .botao:hover{
 	color: #fff;
 	background: var(--cor-primaria);
 }
-
 .bt-objeto:hover::after{color: var(--cor-primaria);}
-
 /*elementos que levam a cor secundária*/
-mark{background: var(--cor-secundaria);}
+mark{
+	color: #fff;
+	background: var(--cor-secundaria);
+}
 
 /*elementos que levam a cor terciária*/
 .bt-hamburguer, 

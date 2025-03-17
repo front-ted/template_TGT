@@ -78,6 +78,7 @@
     width: 100% !important;
   }
   
+  
   h1, h1.visually-hidden{
     font-size: 24pt;    
   }
@@ -154,7 +155,7 @@
     display: block;
     padding: 1.6rem;
     border: 2px solid;
-    page-break-inside: unset !important;
+    page-break-inside: avoid;
     line-height: 1.2;
     margin: 1.2rem 0;
     width: 100%;
@@ -168,7 +169,6 @@
   .accordion-item{
     page-break-inside: avoid;
   }
-  .accordion-header button, .modal-title{font-size: 15pt !important;}
 
   /*carousel*/
   .carousel{
@@ -294,46 +294,32 @@
 
   .splide__pagination{display: none !important;}
   .splide__list li{list-style: none !important;}
+  /*tabela*/
+table {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  overflow: hidden;
+}
 
-  /* código para tabela não desconfigurar na versão impressa */
-  table.text-left.align-middle {
-    width: 80% !important;
-    border-collapse: collapse !important;
-    margin-bottom: 10px !important;
-    margin: auto !important;
-  }
+thead th {
+  color: #fff;
+  padding: 5px 20px;
+  border-right: 5px solid #fff;
+}
 
-  table.text-left.align-middle th {
-    background-color: #1A4480 !important;
-    border: 1px solid black !important;
-    padding: 8px !important;
-    text-align: left !important;
-    width: 50% !important;
-    display: table-cell !important;
-  }
+thead th:last-child {
+  border-right: none;
+}
 
-  table.text-left.align-middle td {
-    border: 1px solid black !important;
-    padding: 8px !important;
-    text-align: left !important;
-    width: 50% !important;
-  }
-  .figure-caption{
-    margin-top: 10px;
-  }
-  /* código para tabela não desconfigurar na versão impressa */
+td {
+  border-style: solid;
+  border-left-width: 5px;
+  border-bottom-width: 3px;
+  padding: 10px 20px;
+  line-height: 20px;
+}
 
-  .accordion-transcricao, .modal.transcricao{
-    width: 90%;
-    border: 2px solid;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  .destaque.gradiente{background: transparent;}
-
-  ul li{list-style-type: disc !important;}
-  ol li{list-style-type: auto !important;}
-  ol[type="a"] li{list-style-type: lower-alpha !important;}
-
-  .bt-tooltip{text-decoration: underline;}
+tbody td:first-child {
+  border-left: 0;
+}
 }
