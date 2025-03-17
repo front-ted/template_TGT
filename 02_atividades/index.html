@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
     <!--Atividade jogo da memória-->
     <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
+    <!--Atividade completa frase-->
+    <link rel="stylesheet" href="../assets/atividades/completa_frase/completa_frase.css">
+    <!--Atividade multi relacionar colunas-->
+    <link rel="stylesheet" href="../assets/atividades/multi_relacionarColunas/multi_relacionarColunas.css">
+    
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
@@ -606,6 +611,132 @@
                         </div>
                     </div>
                 </div>
+                <!-- completa com frase -->
+                <div class="box-atividade d-none d-lg-block no-print">
+                    <p class="titulo-ativ"><strong>Complete com frases:</strong></p>
+                    <div class="activity-container">
+                        <div class="mb-3">
+                            <div class="word-bank" data-words="Paris, capital da França;Romeu e Julieta, obra de Shakespeare;O Senhor dos Anéis, escrita por J.R.R. Tolkien"></div>
+                        </div>
+                        
+                        <div class="sentences">
+                            <p>
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="Paris, capital da França">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                é uma cidade famosa pela Torre Eiffel.
+                            </p>
+                            <p>
+                                A famosa tragédia 
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="Romeu e Julieta, obra de Shakespeare">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                foi adaptada para o cinema várias vezes.
+                            </p>
+                            <p>
+                                A trilogia 
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="O Senhor dos Anéis, escrita por J.R.R. Tolkien">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                é considerada um marco da literatura fantástica.
+                            </p>
+                        </div>
+                        
+                        <div class="feedback mt-3"></div>
+                        <button class="btn btn-success check-btn">Verificar</button>
+                        <button class="btn btn-warning reset-btn">Reiniciar</button>
+                    </div>                    
+                </div>
+                <!--  -->
+                <!-- completa com palavra -->
+                <div class="box-atividade d-none d-lg-block no-print">
+                    <p class="titulo-ativ"><strong>Complete com palavras:</strong></p>
+                    <div class="activity-container">
+                        <div class="mb-3">
+                            <div class="word-bank" data-words="Paris;Shakespeare;Tolkien"></div>
+                        </div>
+                        
+                        <div class="sentences">
+                            <p>
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="Paris">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                é uma cidade famosa pela Torre Eiffel.
+                            </p>
+                            <p>
+                                A famosa tragédia 
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="Shakespeare">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                foi adaptada para o cinema várias vezes.
+                            </p>
+                            <p>
+                                A trilogia 
+                                <span class="blank-input-container">
+                                    <input type="text" class="blank-input" placeholder=" " data-answer="Tolkien">
+                                    <span class="clear-btn">×</span>
+                                </span>
+                                é considerada um marco da literatura fantástica.
+                            </p>
+                        </div>
+                        
+                        <div class="feedback mt-3"></div>
+                        <button class="btn btn-success check-btn">Verificar</button>
+                        <button class="btn btn-warning reset-btn">Reiniciar</button>
+                    </div>                    
+                </div>
+                <!--  -->
+
+                <!-- multi relacionar colunas -->
+                 <!-- Primeira Instância -->
+                <div class="box-atividade d-none d-lg-block no-print">
+                    <p class="titulo-ativ"><strong>Multi Relacionar colunas:</strong></p>
+                    <div class="match-container" data-pairs='[{"left":"1", "right":"a"}, {"left":"2", "right":"b"}]'>
+                        <div class="row">
+                            <div class="col-md-5 left-col">
+                                <div class="match-item" data-id="1">Item 1</div>
+                                <div class="match-item" data-id="2">Item 2</div>
+                            </div>
+                            <div class="col-md-5 offset-md-2 right-col">
+                                <div class="match-item" data-id="a">Item A</div>
+                                <div class="match-item" data-id="b">Item B</div>
+                            </div>
+                        </div>
+                        <div class="feedback-rl text-center"></div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-sm btn-warning retry-btn">Tentar Novamente</button>
+                        </div>
+                    </div>                
+                </div>
+                <!-- multi relacionar colunas -->
+                 <!-- Segunda Instância -->
+                <div class="box-atividade d-none d-lg-block no-print">
+                    <p class="titulo-ativ"><strong>Multi Relacionar colunas 2:</strong></p>
+                    <div class="match-container" data-pairs='[{"left":"3", "right":"c"}, {"left":"4", "right":"d"}]'>
+                        <div class="row">
+                            <div class="col-md-5 left-col">
+                                <div class="match-item" data-id="3">Item 3</div>
+                                <div class="match-item" data-id="4">Item 4</div>
+                            </div>
+                            <div class="col-md-5 offset-md-2 right-col">
+                                <div class="match-item" data-id="c">Item C</div>
+                                <div class="match-item" data-id="d">Item D</div>
+                            </div>
+                        </div>
+                        <div class="feedback-rl text-center"></div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-sm btn-warning retry-btn">Tentar Novamente</button>
+                        </div>
+                    </div>                    
+                </div>
+                <!--  -->
+
+
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
             </div>
         </section>
@@ -629,6 +760,10 @@
     <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
     <!--Atividade associar colunas-->
     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
+    <!--Atividade completa frase-->
+    <script src="../assets/atividades/completa_frase/completa_frase.js"></script>
+    <!--Atividade multi relacionar colunas-->
+    <script src="../assets/atividades/multi_relacionarColunas/multi_relacionarColunas.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
 

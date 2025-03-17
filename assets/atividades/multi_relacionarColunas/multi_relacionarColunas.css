@@ -1,0 +1,32 @@
+        .match-container {
+            margin: 20px 0;
+            padding: 20px;
+        }
+        
+        .match-item {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .match-item.selected {
+            background-color: #e9ecef;
+        }
+
+        .match-item.correct {
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+        }
+
+        .match-item.incorrect {
+            background-color: #f8d7da !important;
+            border-color: #f5c6cb !important;
+        }
+
+        .feedback-rl {
+            min-height: 25px;
+            margin-top: 10px;
+        }
